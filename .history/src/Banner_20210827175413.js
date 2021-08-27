@@ -25,7 +25,7 @@ const Banner = () => {
             `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis officiis rem neque doloremque beatae
           tempora tempore in reiciendis officia fuga. Illo hic laudantium consequatur, recusandae quidem neque aut
           blanditiis soluta.`,
-            150,
+            110,
           )}
         </h1>
       </div>

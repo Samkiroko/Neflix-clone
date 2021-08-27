@@ -1,0 +1,12 @@
+.banner {
+    height: 448px;
+    position: relative;
+    color: #fff;
+    object-fit: contain;
+}
+
+.banner__contents {
+    margin-left: 30px;
+    padding-top: 30px;
+    height: 190px;
+}
