@@ -36,7 +36,12 @@ const Banner = () => {
           <button className='banner__button'>My List</button>
         </div>
         <h1 className='banner__description'>
-          {truncate(movie?.overview || movie?.description || movie?.synopsis, 150)}
+          {truncate(
+            `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis officiis rem neque doloremque beatae
+          tempora tempore in reiciendis officia fuga. Illo hic laudantium consequatur, recusandae quidem neque aut
+          blanditiis soluta.`,
+            150,
+          )}
         </h1>
       </div>
       <div className='banner__fadeBottom' />

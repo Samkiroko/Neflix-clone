@@ -28,7 +28,7 @@
 
 .banner__fadeBottom {
     height: 7.4rem;
-    background-image: linear-gradient(180deg, rgba(37, 37, 37, 0.1), #111);
+    background-image: linear-gradient(180deg, rgba(54, 54, 54, 0.2), #111);
 }
 
 .banner__button {
