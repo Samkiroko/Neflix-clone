@@ -3,10 +3,10 @@
     margin-left: 20px;
 }
 
-.row__posters {
+.roe__posters {
     display: flex;
-    overflow-y: hidden;
-    overflow-x: scroll;
+    /* overflow-y: hidden;
+    overflow-x: scroll; */
     padding: 20px;
 }
 
@@ -23,10 +23,5 @@
 }
 
 .row__poster:hover {
-    transform: scale(1.08);
-    opacity: 1;
-}
-
-.row__posterLarge {
-    max-height: 250px;
+    transform: scale(1.1);
 }
