@@ -32,17 +32,6 @@
     font-weight: 600;
 }
 
-.signupScreen>form>h1 {
-    margin-bottom: 25px;
-    text-align: left;
-}
-
-.signupScreen__gray {
-    color: gray;
-}
-
-.signupScreen__link:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    text-transform: capitalize;
+.signupScreen>h1 {
+    margin-bottom: 10px;
 }

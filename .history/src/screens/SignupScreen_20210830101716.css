@@ -41,7 +41,7 @@
     color: gray;
 }
 
-.signupScreen__link:hover {
+.signupScreen__link {
     cursor: pointer;
     text-decoration: underline;
     text-transform: capitalize;

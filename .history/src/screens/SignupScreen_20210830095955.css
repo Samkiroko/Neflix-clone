@@ -28,21 +28,4 @@
     background-color: #e50914;
     border: none;
     cursor: pointer;
-    margin-top: 20px;
-    font-weight: 600;
-}
-
-.signupScreen>form>h1 {
-    margin-bottom: 25px;
-    text-align: left;
-}
-
-.signupScreen__gray {
-    color: gray;
-}
-
-.signupScreen__link:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    text-transform: capitalize;
 }
