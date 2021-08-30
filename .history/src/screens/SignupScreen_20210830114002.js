@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 import { auth } from '../firebase'
-import './SignupScreen.css'
+import './SignUpScreen.css'
 
-function SignupScreen() {
+function SignUpScreen() {
   const emailRef = useRef(null)
   const passwordRef = useRef(null)
   const register = (e) => {
@@ -33,9 +33,9 @@ function SignupScreen() {
     <div className='signupScreen'>
       <form>
         <h1>sign In</h1>
-        <input ref={emailRef} type='email' name='' id='' placeholder='Email' />
-        <input ref={passwordRef} type='password' name='' id='' placeholder='Password' />
-        <button onClick={signIn} type='submit'>
+        <input type='email' placeholder='Email' />
+        <input type='password' placeholder='Password' />
+        <button type='submit' onClick={signIn}>
           Sign In
         </button>
         <h4>
