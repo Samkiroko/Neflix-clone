@@ -4,7 +4,7 @@ import login_image from '../images/netflix_image.png'
 import SignupScreen from './SignupScreen'
 
 const LoginScreen = () => {
-  const [signIn, setSignIn] = useState(false)
+  const [signIn, setSignIn] = useState(true)
   return (
     <div className='loginScreen'>
       <div className='loginScreen__background'>

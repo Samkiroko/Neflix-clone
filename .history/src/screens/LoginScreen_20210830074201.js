@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import './LoginScreen.css'
 import login_image from '../images/netflix_image.png'
-import SignupScreen from './SignupScreen'
+import SignInScreen from './SignInScreen'
 
 const LoginScreen = () => {
-  const [signIn, setSignIn] = useState(false)
+  const [signIn, setSignIn] = useState(true)
   return (
     <div className='loginScreen'>
       <div className='loginScreen__background'>
@@ -16,7 +16,7 @@ const LoginScreen = () => {
       </div>
       <div className='loginScreen__body'>
         {signIn ? (
-          <SignupScreen />
+          <SignInScreen />
         ) : (
           <>
             <h1>Unlimited files, TV programmes and more</h1>
