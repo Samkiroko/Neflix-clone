@@ -25,7 +25,7 @@ const Nav = () => {
   return (
     <div className={`nav ${show && 'nav__black'}`}>
       <div className='nav__contents'>
-        <img onClick={() => history.push('/')} className='nav__logo' src={netflix} alt='Logo' />
+        <img className='nav__logo' src={netflix} alt='Logo' />
         <img onClick={() => history.push('/profile')} className='nav__avatar' src={avatar} alt='Avatar' />
       </div>
     </div>

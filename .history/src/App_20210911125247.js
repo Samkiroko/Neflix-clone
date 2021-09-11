@@ -4,24 +4,16 @@ import HomeScreen from './screens/HomeScreen'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import LoginScreen from './screens/LoginScreen'
 import { auth } from './firebase'
-import { login, logout, selectUser } from './features/userSlice'
-import { useDispatch } from 'react-redux'
-import { useSelector } from 'react-redux'
-import ProfileScreen from './screens/ProfileScreen'
+import { login, logout } from './features/userSlice'
 
 function App() {
-  const user = useSelector(selectUser)
+  const user = null
   const dispatch = useDispatch()
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
       if (userAuth) {
         console.log(userAuth)
-        dispatch(
-          login({
-            uid: userAuth.uid,
-            email: userAuth.email,
-          }),
-        )
+        dispatch(login(userAuth))
       } else {
         console.log('no user')
       }
@@ -35,9 +27,6 @@ function App() {
           <LoginScreen />
         ) : (
           <Switch>
-            <Route path='/profile'>
-              <ProfileScreen />
-            </Route>
             <Route exact path='/'>
               <HomeScreen />
             </Route>
