@@ -2,9 +2,7 @@ import React from 'react'
 import Nav from '../Nav'
 import avatar2 from '../images/Netflix_avatar.png'
 import { useSelector } from 'react-redux'
-import { selectUser } from '../features/userSlice'
-import { auth } from '../firebase'
-import './ProfileScreen.css'
+import { selectUser } from '../redux/userSlice'
 
 const ProfileScreen = () => {
   const user = useSelector(selectUser)
@@ -16,13 +14,7 @@ const ProfileScreen = () => {
         <div className='profileScreen__info'>
           <img src={avatar2} alt='avatar' />
           <div className='profileScreen__details'>
-            <h2>{user.email}</h2>
-            <div className='profileScreen__plan'>
-              <h3>Plans</h3>
-              <button onClick={() => auth.signOut()} className='profileScreen__signOut'>
-                Sign out
-              </button>
-            </div>
+            <h2></h2>
           </div>
         </div>
       </div>
