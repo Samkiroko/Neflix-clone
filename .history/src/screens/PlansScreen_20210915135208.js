@@ -65,7 +65,7 @@ function PlansScreen() {
 
       if (sessionId) {
         const stripe = await loadStripe(
-          'sk_test_51JZewJLByRxVpUAnYYSsI8URuaUa1tO8wODhmVGhxFxnzVgCOHDdCbckJa2qJ2RsKfsnfmPT3aquJB2BPgfkig7Q00x7e0pBuQ',
+          'pk_test_51IFxMJA7ze7dMpVE6Y1LSKVZdOwBWTq0vMSKAhYUO9FRActSBeZYCuOwv2uo9qvwE0uCxHiaj64qXfdGpPc17OoJ00SgkmUeyT',
         )
         stripe.redirectToCheckout({ sessionId })
       }

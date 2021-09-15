@@ -13,16 +13,17 @@ const ProfileScreen = () => {
     <div className='profileScreen'>
       <Nav />
       <div className='profileScreen__body'>
-        <h1>Edit profile</h1>
+        <h1>Edit Profile</h1>
         <div className='profileScreen__info'>
-          <img src={avatar2} alt='avatar' />
+          <img src='https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png' alt='' />
           <div className='profileScreen__details'>
             <h2>{user.email}</h2>
-            <div className='profileScreen__plan'>
+            <div className='profileScreen__plans'>
               <h3>Plans</h3>
+
               <PlansScreen />
               <button onClick={() => auth.signOut()} className='profileScreen__signOut'>
-                Sign out
+                Sign Out
               </button>
             </div>
           </div>

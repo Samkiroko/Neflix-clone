@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux'
 import { selectUser } from '../features/userSlice'
 import { auth } from '../firebase'
 import './ProfileScreen.css'
+import PlanScreen from './PlansScreen'
 import PlansScreen from './PlansScreen'
 
 const ProfileScreen = () => {
