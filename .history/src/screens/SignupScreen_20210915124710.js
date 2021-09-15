@@ -5,7 +5,6 @@ import './SignupScreen.css'
 function SignupScreen() {
   const emailRef = useRef(null)
   const passwordRef = useRef(null)
-
   const register = (e) => {
     e.preventDefault()
 
@@ -18,31 +17,30 @@ function SignupScreen() {
         alert(error.message)
       })
   }
-
   const signIn = (e) => {
     e.preventDefault()
-
     auth
       .signInWithEmailAndPassword(emailRef.current.value, passwordRef.current.value)
       .then((authUser) => {
         console.log(authUser)
       })
-      .catch((error) => alert(error.message))
+      .catch((error) => {
+        alert(error.message)
+      })
   }
 
   return (
-    <div className='signupScreen'>
+    <div className='signUpScreen'>
       <form>
         <h1>Sign In</h1>
-        <input ref={emailRef} placeholder='Email' type='email' />
-        <input ref={passwordRef} placeholder='Password' type='password' />
-        <button type='submit' onClick={signIn}>
+        <input ref={emailRef} type='email' name='' id='' placeholder='Email' />
+        <input ref={passwordRef} type='password' name='' id='' placeholder='Password' />
+        <button onClick={signIn} type='submit'>
           Sign In
         </button>
-
         <h4>
-          <span className='signupScreen__gray'>New to Netflix? </span>
-          <span className='signupScreen__link' onClick={register}>
+          <span className='signUpScreen__gray'>New to Netflix? </span>
+          <span onClick={register} className='signUpScreen__link'>
             Sign Up now.
           </span>
         </h4>
